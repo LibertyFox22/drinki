@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+:root {
+  --bg-color: #242b33;
+  --head-color: #e7ba30;
+  --text-color: #fff;
+  --footer-color: #2D343C;
+}
+
+body {
+  font-family: Raleway;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+a {
+  
+  color: var(--head-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-color);
+  transition: color 0.25s ease-in; 
+  
+}
+
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 74px;
+
+  min-height: 840px;
+  background: linear-gradient(
+      180deg,
+      #242b33 11.98%,
+      rgba(45, 52, 60, 0.38) 51.04%,
+      #242b33 96.19%
+  ),
+  url('./../img/backgr.png');
+  /* background: url('./../img/backgr.png'); */
+  background-repeat: no-repeat;
+  
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header__top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 3rem
+  
+}
+
+.logo {
+ font-size: 2.3rem;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  column-gap: 40px;
+  font-size: 14px;
+}
+
+.header__title {
+  color: var(--head-color);
+  text-align: center;
+  font-size: 48px;
+}
+.header__title span {
+  color: #fff;
+}
+
+.info {
+  font-size: 18px;
+  position: relative;
+  padding-left: 35px;
+}
+
+.info::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 21px;
+  height: 21px;
+
+  background-image: url('./../img/map.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info--tel::before {
+  background-image: url('./../img/phone.svg');
+}
+
+.header__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-content: center;
+  margin-bottom: 10%;
+  margin-left: 5%;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.visually-hidden {
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.screen {
+  margin-top: 3rem;
+}
+
+.about {
+  display: flex;
+  overflow:hidden;
+  overflow-wrap: normal;
+  
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  /* font-size: 2rem; */
+  font-size: 2vw;
+  padding-top: 4rem;
+  min-width: 300px;
+  
+  
+}
+p {
+  margin-top: 5rem;
+  text-align: center;
+  text-wrap: wrap;
+  word-wrap: normal;
+  /* max-width: 530px; */
+  
+}
+
+.app {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+  align-self: center;
+  scale: 0.9;
+}
+
+button {
+  padding: 1rem 6rem;
+
+  border-radius: 21px;
+  
+  border: 2px solid #e7ba30;
+  background-color:#e7ba30;
+  color: black;
+  font-size: 1.8vw;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #e7ba30;
+}
+
+.partner {
+  align-self: center;
+  margin-top: 2rem;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+  .description{
+  padding-top: 3rem;
+  padding-left: 0;
+}
+
+.app {
+  scale: 0.6;
+}
+
+button {
+  padding: 1rem 4rem;
+}
+.screen {
+  scale: 0.9;
+}
+}
+
+
+@media screen and (max-width: 830px) {
+
+.about {
+  overflow: scroll;
+}
+.description {
+  padding-top: 0;
+}
+.header {
+  justify-content:start;
+}
+.app {
+  scale: 0.6;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+}
+.screen {
+  /* display: none; */
+  scale: 1vw;
+  align-self: left;
+  margin-top: -1rem;
+}
+}
+
+
+
+
+
+
+/* .video {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+
+
+.video__link {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.video__link::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 43, 51, 0.8);
+  transition: background-color 0.2s ease-in;
+}
+.video__link:hover::before {
+  background: rgba(36, 43, 51, 0.7);
+}
+
+.video__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in;
+}
+@media screen and (max-width: 959px) {
+  .video__icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.video__link:hover .video__icon {
+  transform: translate(-50%, -50%) scale(1.2);
+  filter: saturate(1.5);
+} */
