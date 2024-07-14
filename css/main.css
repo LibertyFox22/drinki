@@ -63,7 +63,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 3rem
+  /* margin-right: 3rem */
   
 }
 
@@ -150,14 +150,16 @@ a:hover {
   display: flex;
   flex-direction: column;
   /* font-size: 2rem; */
-  font-size: 2vw;
+  font-size: 2rem;
   padding-top: 4rem;
+  padding-left: 5vw;
   min-width: 300px;
+  margin-top: 3rem;
   
   
 }
 p {
-  margin-top: 5rem;
+  margin-top: 2rem;
   text-align: center;
   text-wrap: wrap;
   word-wrap: normal;
@@ -175,15 +177,14 @@ p {
 
 button {
   padding: 1rem 6rem;
-
   border-radius: 21px;
-  
   border: 2px solid #e7ba30;
   background-color:#e7ba30;
   color: black;
-  font-size: 1.8vw;
+  font-size: 1.8rem;
   font-weight: bold;
 }
+
 
 button:hover {
   background-color: rgba(0, 0, 0, 0.6);
@@ -201,6 +202,7 @@ button:hover {
 
   .description{
   padding-top: 3rem;
+  font-size: 1.6rem;
   /* padding-left: 0; */
 }
 
@@ -210,39 +212,13 @@ button:hover {
 
 button {
   padding: 1rem 4rem;
+  font-size: 1.6rem;
 }
 .screen {
   scale: 0.9;
 }
 }
 
-
-@media screen and (max-width: 830px) {
-
-.description {
-  padding-top: 0;
-}
-.header {
-  justify-content:start;
-}
-.app {
-  scale: 0.6;
-}
-
-p {
-  font-size: 1.5rem;
-}
-
-button {
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-}
-.screen {
-  scale: 1vw;
-  margin-top: -1rem;
-  margin-left: -3rem;
-}
-}
 
 
 @media screen and (max-width: 785px) {
@@ -252,20 +228,25 @@ button {
   }
 
   .screen {
-    /* margin-left: 19vw;
-    margin-bottom: -5rem; */
-    /* margin: 0 auto; */
     display: flex;
    justify-content: center;
+   margin-top: -1.5rem;
    margin-bottom: -3rem;
    min-width: 345px;
    margin-left: 0px;
 }
   p {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 .app {
   margin-top: 1rem;
+}
+
+ul {
+  scale: 0.9;
+}
+.description{
+  margin-top: -6rem;
 }
 }
 
