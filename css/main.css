@@ -183,6 +183,7 @@ button {
   color: black;
   font-size: 1.8rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 
@@ -222,6 +223,7 @@ button {
 
 
 @media screen and (max-width: 785px) {
+  
   .about {
     display: block;
     text-align: center;
@@ -247,6 +249,8 @@ ul {
 }
 .description{
   margin-top: -6rem;
+  padding-left: 0.1rem;
+  padding-right:0.1rem;
 }
 }
 
