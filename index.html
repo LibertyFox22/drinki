@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/icon2.png" type="image/x-icon">
+    <script src="lang.js" defer></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -17,12 +19,18 @@
             <div class="header__top">
                 <div class="wrapper">
                     <div class="header__top-row">
-                        <h3 class="logo"><a href="#"> Drinki</a></h3>
+                        <h1 class="logo"><a href="#"> Drinki</a></h1>
                         
-                        <div class="header__nav">
+                        <div class=" header__nav">
                             <nav class="nav">
                                 <ul>
-                                  <li><a href="https://next.nexusmods.com/profile/MrShersh/about-me" target="_blank"><img src="img/Insta.png" alt="instagram"></a></li>  
+                                  <li><a href="https://next.nexusmods.com/profile/MrShersh/about-me" target="_blank"><img src="img/Insta.png" alt="instagram"></a></li> 
+                                  <label for="lang"><img src="img/Translat.png" alt=""></label>
+                                    <select id="lang" class="select">
+                                    <option value="ru" class="ru">ru</option>
+                                    <option value="en" class="en" selected>en</option>
+                                    <option value="tr" class="tr">tr</option>
+                                  </select>  
                                 </ul>
                             </nav>
                         </div>
@@ -30,17 +38,18 @@
                 </div>
             </div>
 
-            <main>
+            <section>
                 <div class="wrapper">
                     <div class="about">
                         <div class="screen">
                             <img src="img/Iphonama.png" alt="">
                         </div>
                         <div class="description">
-                            <p>Will allow you to try the most original and delicious drinks</p>
-                            <p>Want to see your establishment in the app?</p>
+                            <p class="first">Will allow you to try the most original and delicious drinks</p>
+                            <p class="second">Want to see your establishment in the app?</p>
                             <div class="partner">
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf96GBytI0KrXPL1ZSHvjvhk3jIuUK5Hrdot2VktkG3t88M2Q/viewform" target="_blank"><button>Join us now</button></a>
+                                <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSf96GBytI0KrXPL1ZSHvjvhk3jIuUK5Hrdot2VktkG3t88M2Q/viewform" target="_blank"><button>Join us now</button></a> -->
+                                <button class="but" >Join us now</button>
                             </div>
                             <div class="app">
                                 <a href="https://apps.apple.com/us/app/fallout-shelter/id991153141" target="_blank"><img src="img/appStore.png" alt=""></a>
@@ -48,23 +57,39 @@
                             </div>
                         </div>
                 </div>
-                </div>
-            </main>
-            
-        
+                </div>          
+            </section>
     </header>
+    <div class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                
+                <a href="#" class="popup__close">Agree</a>
+                <a href="agreement.html" class="popup__exit">Don't agree</a>
+                <div class="popup__title"><h2>Privacy Policy</h2></div>
+                <div class="popup__text">
+                    By clicking the "agree" button, you confirm that you are a sweet bun
+                    <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repellendus dolorum deserunt officia pariatur aliquam dolorem accusantium iusto enim nobis dolores ad sequi, quisquam iure cum libero tempore odit a. 
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- <section class="video none1">
-        <h2 class="visually-hidden">Видео про ЖК Loft House</h2>
-        <div class="container">
+        <h2 class="visually-hidden">Video</h2>
+        <div class="wrapper">
 
             <a href="https://www.youtube.com/watch?v=bhJNL9JUsnY" data-youtubeLightbox class="video__link">
                 <img src="./img/video/play.svg" alt="" class="video__icon">
                 <img src="./img/video/video-img.jpg" alt="" class="video__img">
             </a>
         </div>
-    </section> -->
-
+    </section>   -->
 
 </body>
+
 </html>
+
+
+
+
