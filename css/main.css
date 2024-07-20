@@ -272,6 +272,7 @@ select {
   left: 0;
   opacity: 0;
   visibility: hidden;
+  z-index: 10;
 }
 .popup.open {
   opacity: 1;
@@ -337,7 +338,6 @@ position: relative;
    
 }
 
-
   p {
     margin-top: 2rem;
 }
@@ -368,7 +368,11 @@ p {
 }
 
 
-/* .video {
+
+
+
+
+.video {
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -406,16 +410,18 @@ p {
 }
 @media screen and (max-width: 959px) {
   .video__icon {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
+
 }
 
 .video__link:hover .video__icon {
   transform: translate(-50%, -50%) scale(1.2);
   filter: saturate(1.5);
-} */
+} 
 
-/* .video_link .video__img{
-  max-width: 300px;
-} */
+.video__img{
+  max-width: 80%;
+
+}
