@@ -418,7 +418,7 @@ p {
 
 .video__link:hover .video__icon {
   transform: translate(-50%, -50%) scale(1.2);
-  filter: saturate(1.5);
+  filter: saturate(1.7);
 } 
 
 .video__img{
