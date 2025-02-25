@@ -19,6 +19,19 @@ const langArr = {
         "en": "Unfortunately, without accepting the privacy policy, we will not be able to tell you about our app",
         "tr": "Ne yazık ki gizlilik politikasını kabul etmeden size uygulamamız hakkında bilgi veremeyeceğiz",
     },
-
-
+    "fourth" : {
+            "ru": "На этой странице вы можете заполнить заявку, чтобы присоединится к нам, и скачать специальные приложения.",
+            "en": "On this page you can fill out an application to join us and download special applications.",
+            "tr": "Bu sayfada aramıza katılmak için başvurunuzu doldurabilir ve özel uygulamaları indirebilirsiniz.",
+        },
+        "button2" : {
+        "ru": "Форма регистрации",
+        "en": "Registration form",
+        "tr": "Kayıt formları",
+    },
+    "fith" : {
+        "ru": "Скорее заполняй форму",
+        "en": "Fill out the form quickly",
+        "tr": "Formu hızlıca doldurun",
+    },
 }

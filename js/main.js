@@ -10,8 +10,8 @@
         popup.classList.remove('open');
     }
     
-    let button = document.querySelector('.but');
-    button.onclick = function() { window.location = 'https://docs.google.com/forms/d/e/1FAIpQLSf96GBytI0KrXPL1ZSHvjvhk3jIuUK5Hrdot2VktkG3t88M2Q/viewform'; };
+    // let button = document.querySelector('.but');
+    // button.onclick = function() { window.location = 'https://docs.google.com/forms/d/e/1FAIpQLSf96GBytI0KrXPL1ZSHvjvhk3jIuUK5Hrdot2VktkG3t88M2Q/viewform'; };
 
  
     
